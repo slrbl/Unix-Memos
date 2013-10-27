@@ -4,6 +4,9 @@ sed -e 's/oldstring/newstring/g' source_file.txt > output_file.txt
 s means substitute
 g means global: replace all occurences
 
+sed 's/toto/TOTO/2' demo_file.txt
+if demo_file.txt contains a lot of "toto", this command will substitute the second "toto" by "TOTO"
+
 ################################ #delete lines
 sed 'd' demo_file.txt
 this will execute the command 'd' on all lines => delete all line
@@ -30,5 +33,9 @@ sed -e '/^#/d' /etc/services | more
 sed 's/^#//g' filename
 delete lines stqrting with "#"
 
+############################ #Display lines
 sed -n '/http/p' demo_file.txt
 print only lines contqinig http
+
+sed '5q' demo_file.txt
+print the 5 first lines of the file demo_file.txt

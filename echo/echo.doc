@@ -1,0 +1,2 @@
+#Generate trigrams
+echo {a..z}{a..z}{a..z} > Trigrammes.txt
