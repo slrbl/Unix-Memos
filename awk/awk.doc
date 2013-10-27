@@ -1,0 +1,3 @@
+#Display lines between two string
+awk '/passed/,/knows/' demo_file.txt
+print lines between the lines containing "passed" and "knows"
