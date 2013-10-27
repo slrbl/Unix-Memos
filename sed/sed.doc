@@ -17,6 +17,9 @@ this will delete lines from 1 to 6
 sed '/Nirvana/d' demo_file.txt
 delete all files containig 'Nirvana'
 
+sed '/Nirvana/!d' demo_file.txt
+delete all files not containing 'Nirvana'
+
 sed '/^Although/,/^Which/d' demo_file.txt
 remove the lines between a line starting with "Although" and a line starting with "Which"
 
