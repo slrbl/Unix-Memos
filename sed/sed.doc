@@ -1,0 +1,31 @@
+################################ Substitue oldstring by newstring
+sed -e 's/oldstring/newstring/g' source_file.txt > output_file.txt
+-e means expression (not mandatory)
+s means substitute
+g means global: replace all occurences
+
+################################ #delete lines
+sed 'd' demo_file.txt
+this will execute the command 'd' on all lines => delete all line
+
+sed '1d' demo_file.txt
+this will delete the line number 1
+
+sed '1,6d' demo_file.txt
+this will delete lines from 1 to 6
+
+sed '/Nirvana/d' demo_file.txt
+delete all files containig 'Nirvana'
+
+sed '/^Although/,/^Which/d' demo_file.txt
+remove the lines between a line starting with "Although" and a line starting with "Which"
+
+sed 's/.$//' filename
+delete the last character of all lines
+
+sed -e '/^#/d' /etc/services | more
+sed 's/^#//g' filename
+delete lines stqrting with "#"
+
+sed -n '/http/p' demo_file.txt
+print only lines contqinig http

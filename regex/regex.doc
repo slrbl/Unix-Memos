@@ -1,0 +1,23 @@
+Character Description
+^	Matches the beginning of the line
+$	Matches the end of the line
+.	Matches any single character
+*	Will match zero or more occurences of the previous character
+[]	Matches all the caracters inside the []
+
+Regular expression (used with sed)
+/./	Will match any line that contains at least one character
+/../	Will match any line that contains at least two character
+/^#/	Will match any line that begins with a #
+/^$/	Will match all blan lines
+/}^/	Will match any lines that ends with '}' (no spaces)
+/}*^/	Will match any line ending with '}' followed by zero or more spaces
+/[abc]/	Will match any line that contains a lowercase 'a', 'b' or 'c'
+/^[abc]/ will match any line that begins with 'a', 'b' or 'c'
+
+#Delete any matching lines:
+sed -e '/regexp/d' /path/to/my/test/file 
+
+#Print regexp matches, and delete non matches
+sed -n -e '/regexp/p' /path/to/my/test/file
+
