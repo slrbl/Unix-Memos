@@ -39,3 +39,8 @@ print only lines contqinig http
 
 sed '5q' demo_file.txt
 print the 5 first lines of the file demo_file.txt
+
+sed -n '$p' demo_file.txt
+diplay the last line
+sed '$!d' demo_file.txt
+diplay the last line
