@@ -1,3 +1,4 @@
+sed:stream editor
 ################################ Substitue oldstring by newstring
 sed -e 's/oldstring/newstring/g' source_file.txt > output_file.txt
 -e means expression (not mandatory)

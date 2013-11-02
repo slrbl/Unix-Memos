@@ -1,3 +1,20 @@
 #Display lines between two string
 awk '/passed/,/knows/' demo_file.txt
 print lines between the lines containing "passed" and "knows"
+
+awk '{print $3}' demo_file.txt
+print the file demo_file.txt line by line
+
+awk '{print $3}' demo_file.txt
+print the third field of each line in demo_text.txt
+
+awk '/The/ {print $0}' demo_file.txt
+print all lines containing the string "The"
+
+awk '$1~/u/ {print $0}' demo_file.txt
+display all the lines where the first field contains "u"
+
+awk '{print NR ":", $0}' demo_file.txt
+
+awk '{print NR ":", $0}' demo_file.txt
+Display all the lines with their number 
