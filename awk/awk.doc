@@ -15,6 +15,7 @@ awk '$1~/u/ {print $0}' demo_file.txt
 display all the lines where the first field contains "u"
 
 awk '{print NR ":", $0}' demo_file.txt
-
-awk '{print NR ":", $0}' demo_file.txt
 Display all the lines with their number 
+
+awk '{s=s+$1} END {print s}'
+Print the sum of all the first column numbers
