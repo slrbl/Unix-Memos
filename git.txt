@@ -1,0 +1,6 @@
+Git
+
+Create a new git repo
+
+git init -bare myrepo.git
+Initialized empty Git repository in ./myrepo.git
