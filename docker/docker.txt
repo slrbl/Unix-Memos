@@ -1,0 +1,2 @@
+1. Connect to a docker container
+docker exec -it CONTAINER_ID /bin/bash
