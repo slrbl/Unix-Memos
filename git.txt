@@ -1,6 +1,6 @@
 Git Notes
 
-Create a new git repo
+# Create a new git repo
 
 git init -bare myrepo.git
 Initialized empty Git repository in ./myrepo.git
@@ -24,3 +24,5 @@ git checkout -b [name_of_your_new_branch]
 # push from a new brach
 git push --set-upstream origin WelcomeMessage
 
+# Why it is called pull request and not push request
+https://stackoverflow.com/questions/21657430/why-is-a-git-pull-request-not-called-a-push-request
