@@ -4,3 +4,23 @@ Create a new git repo
 
 git init -bare myrepo.git
 Initialized empty Git repository in ./myrepo.git
+
+# commit 
+git commit -m "comment about my change"
+
+# pull
+git pull
+
+# push
+git push
+
+# List all the braches 
+
+git branch -a
+
+# Create a new branch
+git checkout -b [name_of_your_new_branch]
+
+# push from a new brach
+git push --set-upstream origin WelcomeMessage
+
