@@ -1,2 +1,5 @@
+2. List docker images
+docker image ls
+
 1. Connect to a docker container
 docker exec -it CONTAINER_ID /bin/bash
