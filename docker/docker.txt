@@ -7,5 +7,8 @@ docker image rm -f IMAGE_ID
 4. Remove unused image
 docker image prune
 
-5. Connect to a docker container
+5. List running containers 
+docker ps
+
+6. Connect to a docker container
 docker exec -it CONTAINER_ID /bin/bash
