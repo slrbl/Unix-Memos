@@ -14,4 +14,6 @@
   $ find . -name "*.*" | xargs wc -l
 </code>
 <p>Add an extension to all files in a given directory</p>
-find . -name "*.*" -exec mv {} {}.some_extension \;
+<code>
+  find . -name "*.*" -exec mv {} {}.some_extension \;
+</code>
