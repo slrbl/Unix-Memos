@@ -24,5 +24,10 @@ git checkout -b [name_of_your_new_branch]
 # push from a new brach
 git push --set-upstream origin WelcomeMessage
 
+# How to Checkout/Clone From a Specific Git Commit Id (SHA)
+git pull
+git reset --hard 7d4c59f5
+https://devopscube.com/checkout-clone-specific-git-commit-id-sha/
+
 # Why it is called pull request and not push request
 https://stackoverflow.com/questions/21657430/why-is-a-git-pull-request-not-called-a-push-request
