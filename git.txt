@@ -31,3 +31,12 @@ https://devopscube.com/checkout-clone-specific-git-commit-id-sha/
 
 # Why it is called pull request and not push request
 https://stackoverflow.com/questions/21657430/why-is-a-git-pull-request-not-called-a-push-request
+
+# Remove a commit 
+## Remove commit and push to remote 
+git reset --hard <last_working_commit_id>
+git push --force
+
+## Reset local repos to be like remote
+git reset --hard origin/master
+
